@@ -1,0 +1,27 @@
+{
+  "name": "gogocode-tutorial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dingq030511/gogocode-tutorial.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dingq030511/gogocode-tutorial/issues"
+  },
+  "homepage": "https://github.com/dingq030511/gogocode-tutorial#readme",
+  "dependencies": {
+    "gogocode": "^1.0.55"
+  },
+  "type": "module"
+}

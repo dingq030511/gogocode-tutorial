@@ -10,6 +10,8 @@ function alert(a) {
 function logA1(){
   const a = 123;
   console.log(a);
+  const b = 345;
+  console.log(b);
 }
 
 

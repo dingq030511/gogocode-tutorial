@@ -8,7 +8,7 @@ console.log(code);
 
 
 // const aDef = ast.find('const a = 123')
-const aDef = ast.find('const a=$_$')
+const aDef = ast.find('const a=$_$0')
 
 console.log(aDef.match);
 

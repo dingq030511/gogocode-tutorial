@@ -1,1 +1,3 @@
-import './examples/find-demo/findDemo.js'
+// import './examples/findDemo/findDemo.js'
+// import './examples/hasDemo/hasDemo.js'
+import './examples/replaceDemo/replaceDemo.js'

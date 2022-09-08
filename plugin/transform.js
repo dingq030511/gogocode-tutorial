@@ -11,13 +11,12 @@ module.exports = function (fileInfo, api, options) {
     const sourceCode = fileInfo.source;
     const $ = api.gogocode;
     const ast = $(sourceCode);
-    ast.replace(`function $_$($$$0){$$$1}`, (match)=>{
-        console.log(match['$$$0']);
+    ast.replace(`function $_$0($$$0){$$$1}`, (match)=>{
         const fnName = match[0][0].value;
         const argNames = match['$$$0'].map(node=>node.name);
         return `function $_$($$$0){
     console.log('函数${fnName}开始调用');
-    console.log('参数${argNames.join(',')} :', ${argNames.join(',')});
+    ${argNames.length > 0 ? `console.log('参数${argNames.join(',')} :', ${argNames.join(',')});`: ''}
     $$$1
 }`
     })

@@ -2,7 +2,7 @@ import $ from 'gogocode'
 import {join} from 'path'
 import {fileURLToPath} from 'url'
 const ast = $.loadFile(join(fileURLToPath(import.meta.url), '../source.js'));
-const test1 = ast.find('function log() {}');
+const test1 = ast.find('function log(a) {}');
 const code = test1.generate();
 console.log(code);
 

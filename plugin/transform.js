@@ -16,7 +16,7 @@ module.exports = function (fileInfo, api, options) {
         const argNames = match['$$$0'].map(node=>node.name);
         return `function $_$($$$0){
     console.log('函数${fnName}开始调用');
-    ${argNames.length > 0 ? `console.log('参数${argNames.join(',')} :', ${argNames.join(',')});`: ''}
+    console.log('参数${argNames.join(',')} :', ${argNames.join(',')});
     $$$1
 }`
     })

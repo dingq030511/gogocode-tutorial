@@ -1,5 +1,6 @@
 
-function log(a) {
+function log(a, b) {
+  const c= {d: 1};
   console.log(a);
 }
 
